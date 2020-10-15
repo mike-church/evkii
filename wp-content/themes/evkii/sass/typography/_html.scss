@@ -1,0 +1,30 @@
+
+.font-light {
+  font-weight:$light;
+}
+.font-regular {
+  font-weight:$regular;
+}
+.font-medium {
+  font-weight:$medium;
+}
+.font-bold {
+  font-weight:$bold;
+}
+
+@include media-breakpoint-up(xs) {  
+  h1 {
+    font-size:.8rem;
+    font-weight: $medium;
+    line-height: normal;
+    margin:0;
+    letter-spacing:.5rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  h1 {
+    font-size:1.2rem;
+    letter-spacing:.7rem;
+  }
+}
